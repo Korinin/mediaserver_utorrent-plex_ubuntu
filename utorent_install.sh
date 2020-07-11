@@ -31,6 +31,10 @@ utserver -settingspath /opt/utorrent-server-alpha-v3_3/ -daemon
 sudo ufw allow 8080/tcp
 sudo ufw allow 6881/tcp
 
+mkdir /home/utorrent /home/utorrent/complete /home/utorrent/toSave
+chmod 777 /home/utorrent /home/utorrent/complete /home/utorrent/toSave
+ 
+
 #Please note that /gui is needed in the URL, otherwise you will encounter invalid request error.
 # When asked for username and password, enter admin in username field and leave password filed empty.
 
