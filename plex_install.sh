@@ -24,3 +24,9 @@ mkdir /home/music
 chown -R plex:plex /home/video
 chown -R plex:plex /home/music
 chown -R plex:plex /moviesInDo
+#Note that if Plex is installed on a remote Ubuntu 18.04 server, you need to set up a SSH tunnel by executing the following command on your local computer. Replace 12.34.56.78 with the IP address of the remote Ubuntu server.
+
+#ssh 12.34.56.78 -L 8888:localhost:32400
+#Then you can access Plex web interface via the following URL.
+
+#http://localhost:8888/web
